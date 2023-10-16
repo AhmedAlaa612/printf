@@ -38,5 +38,6 @@ int _printf(const char *format, ...)
 		else
 			sum += _putchar(format[i]);
 	}
+	va_end(args);
 	return (sum);
 }
